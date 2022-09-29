@@ -1,0 +1,15 @@
+.navbar{
+    display: flex;
+    gap: 20px;
+}
+
+.navbar>.disabled{
+    color: #ADADAD;
+}
+
+@media screen and (max-width: 750px) {
+    .navbar{
+        display: flex;
+        justify-content: center;
+    }
+}

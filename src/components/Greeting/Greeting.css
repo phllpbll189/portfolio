@@ -1,0 +1,135 @@
+
+
+
+.greeting-section>.name {
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 120px;
+}
+
+.greeting-section>.start {
+    font-weight: 275;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.greeting-section>.introduction {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 34px;
+}
+
+.greeting-section>.connect {
+    font-weight: 150;
+    font-size: 14px;
+    line-height: 42px;
+}
+
+
+
+.github-image {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    gap: 20px;
+    width: 100%;
+    height: 28px;
+
+    /*background: #FFFFFF;*/
+}
+
+.github-image>.gitimage {
+    transition: 400ms;
+    height: 100%;
+    width: 28px;
+
+    background: url(../../resources/github.svg);
+    border-radius: 118px;
+    border: 3px solid #1B1F23;
+    border-radius: 39px;
+    background-color: white;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+
+.github-image>.linkdimage {
+    transition: 400ms;
+    width: 28px;
+    height: 100%;
+    border: 3px solid #1B1F23;
+    border-radius: 39px;
+    background: url(../../resources/linkdin.svg);
+    border-radius: 118px;
+    
+    background-color: white;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.github-image>:hover{
+    transition: ease-out 400ms;
+    background-color: grey;
+}
+
+.self-image-port {
+    position: absolute;
+    top: 218PX;
+    right: calc(100vw / 3);
+    mask-image: url(../../resources/self_image_mask.svg);
+    background: url(../../resources/testsvg.svg);
+    height: 351px;
+    width: 362px;
+}
+
+@media screen and (max-width: 1500px) {
+    .self-image-port {
+        right: calc(100vw/6)
+    }
+}
+
+@media screen and (max-width: 1115px) {
+    .self-image-port {
+        position: inherit;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .greeting-section>.name {
+        font-weight: 700;
+        font-size: 87px;
+        line-height: 66px;
+    }
+    
+    .greeting-section>.start {
+        font-weight: 275;
+        font-size: 15px;
+        line-height: 30px;
+    }
+    
+    .greeting-section>.introduction {
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 34px;
+    }
+    
+    .greeting-section>.connect {
+        font-weight: 150;
+        font-size: 11px;
+        line-height: 42px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .self-image-port {
+        position: inherit;
+        top: 218PX;
+        right: calc(100vw / 3);
+        mask-image: url(../../resources/small_self_image_mask.svg);
+        background: url(../../resources/testsvg.svg);
+        height: 241.74px;
+        width: 250px;
+        background-position: center;
+    }
+}
