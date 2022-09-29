@@ -1,0 +1,120 @@
+.job-container{
+    display: flex;
+    gap: 90px;
+    flex-direction: row;
+    width: 100%;
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.job-description {
+    height: fit-content;
+}
+
+.job-description > p{
+    margin: 0;
+}
+
+.job-name {
+    font-size: 30px; 
+}
+
+.job-title {
+    font-weight: 100;
+}
+
+.job-dates > p{
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.leahy {
+    background: url(../../resources/leahyCenter.svg);
+}
+
+.inspace {
+    background: url(../../resources/inspace_logo.svg);
+}
+
+.job-logo {
+    background-color: white;
+    border-radius: 50%;
+    height: 100px;
+    min-width: 100px;
+    max-width: 100px;
+}
+
+.job-dates {
+    margin-left: auto;
+}
+
+@media screen and (max-width: 750px) {
+    .job-container{
+        display: flex;
+        gap: 40px;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .job-name {
+        font-size: 18px; 
+    }
+    
+    .job-title {
+        font-weight: 100;
+        font-size: 13px;
+    }
+    
+    .job-dates > p{
+        align-content: center;
+        justify-content: center;
+        margin: 0;
+        font-size: 15px;
+        font-weight: 100;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #experience-header{
+        text-align: center;
+    }
+    
+    .job-container{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .job-name {
+        font-size: 18px; 
+    }
+    
+    .job-title {
+        font-weight: 100;
+        font-size: 13px;
+    }
+
+    .job-dates{
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .job-dates > p{
+        align-content: center;
+        justify-content: center;
+        margin: 0;
+        font-size: 15px;
+        font-weight: 100;
+    }
+}
+
