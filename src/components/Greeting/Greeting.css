@@ -73,25 +73,450 @@
     background-color: grey;
 }
 
-.self-image-port {
-    position: absolute;
-    top: 218PX;
-    right: calc(100vw / 3);
-    mask-image: url(../../resources/self_image_mask.svg);
-    background: url(../../resources/testsvg.svg);
-    height: 351px;
+.img-container {
     width: 362px;
+    height: 362px;
+    position: absolute;
+    display: flex;
+    top: var(--top);
+    right: var(--right);
 }
 
-@media screen and (max-width: 1500px) {
-    .self-image-port {
-        right: calc(100vw/6)
+.skill-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*
+    Keyframes to animate the rotation around the picture
+*/
+
+@keyframes rot-1 {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+@-webkit-keyframes rot-1{
+    from{
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-tranform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 
-@media screen and (max-width: 1115px) {
-    .self-image-port {
-        position: inherit;
+.rot-1 {
+    width: 500px;
+    height: 500px;
+    top: calc(var(--top) - 70.5px);
+    right: calc(var(--right) - 70.5px);
+    -webkit-animation: rot-1 20s linear infinite;
+    -moz-animation: rot-1 20s linear infinite;
+    -ms-animation: rot-1 20s linear infinite;
+    -o-animation: rot-1 20s linear infinite;
+    animation: rot-1 20s linear infinite;
+}
+
+@keyframes rot-2 {
+    from {
+      -ms-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+    to {
+      -ms-transform: rotate(405deg);
+      -moz-transform: rotate(405deg);
+      -webkit-transform: rotate(405deg);
+      -o-transform: rotate(405deg);
+      transform: rotate(405deg);
+    }
+  }
+
+@-webkit-keyframes rot-2{
+    from{
+        -webkit-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    to {
+        -webkit-tranform: rotate(405deg);
+        -o-transform: rotate(405deg);
+        transform: rotate(405deg);
+    }
+}
+
+.rot-2 {
+    width: 500px;
+    height: 500px;
+    top: calc(var(--top) - 70.5px);
+    right: calc(var(--right) - 70.5px);
+    -webkit-animation: rot-2 20s linear infinite;
+    -moz-animation: rot-2 20s linear infinite;
+    -ms-animation: rot-2 20s linear infinite;
+    -o-animation: rot-2 20s linear infinite;
+    animation: rot-2 20s linear infinite;
+}
+
+@keyframes rot-3 {
+    from {
+      -ms-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      transform: rotate(90deg);
+    }
+    to {
+      -ms-transform: rotate(450deg);
+      -moz-transform: rotate(450deg);
+      -webkit-transform: rotate(450deg);
+      -o-transform: rotate(450deg);
+      transform: rotate(450deg);
+    }
+  }
+
+@-webkit-keyframes rot-3{
+    from{
+        -webkit-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    to {
+        -webkit-tranform: rotate(450deg);
+        -o-transform: rotate(450deg);
+        transform: rotate(450deg);
+    }
+}
+
+.rot-3 {
+    width: 500px;
+    height: 500px;
+    top: calc(var(--top) - 70.5px);
+    right: calc(var(--right) - 70.5px);
+    -webkit-animation: rot-3 20s linear infinite;
+    -moz-animation: rot-3 20s linear infinite;
+    -ms-animation: rot-3 20s linear infinite;
+    -o-animation: rot-3 20s linear infinite;
+    animation: rot-3 20s linear infinite;
+}
+
+@keyframes rot-4 {
+    from {
+      -ms-transform: rotate(135deg);
+      -moz-transform: rotate(135deg);
+      -webkit-transform: rotate(135deg);
+      -o-transform: rotate(135deg);
+      transform: rotate(135deg);
+    }
+    to {
+      -ms-transform: rotate(495deg);
+      -moz-transform: rotate(495deg);
+      -webkit-transform: rotate(495deg);
+      -o-transform: rotate(495deg);
+      transform: rotate(495deg);
+    }
+  }
+
+@-webkit-keyframes rot-4{
+    from{
+        -webkit-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
+    to {
+        -webkit-tranform: rotate(495deg);
+        -o-transform: rotate(495deg);
+        transform: rotate(495deg);
+    }
+}
+
+.rot-4 {
+    width: 500px;
+    height: 500px;
+    top: calc(var(--top) - 70.5px);
+    right: calc(var(--right) - 70.5px);
+    -webkit-animation: rot-4 20s linear infinite;
+    -moz-animation: rot-4 20s linear infinite;
+    -ms-animation: rot-4 20s linear infinite;
+    -o-animation: rot-4 20s linear infinite;
+    animation: rot-4 20s linear infinite;
+}
+
+
+/*
+    Keyframes to animate the rotation of the skill badges
+    this prevents the images from being presented at the wrong angle
+*/
+
+@keyframes rev-1 {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(-360deg);
+      -moz-transform: rotate(-360deg);
+      -webkit-transform: rotate(-360deg);
+      -o-transform: rotate(-360deg);
+      transform: rotate(-360deg);
+    }
+  }
+
+@-webkit-keyframes rev-1{
+    from{
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-tranform: rotate(-360deg);
+        -o-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}
+
+.rev-1 {
+    -webkit-animation: rev-1 20s linear infinite;
+    -moz-animation: rev-1 20s linear infinite;
+    -ms-animation: rev-1 20s linear infinite;
+    -o-animation: rev-1 20s linear infinite;
+    animation: rev-1 20s linear infinite;
+}
+
+@keyframes rev-2 {
+    from {
+      -ms-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+    to {
+      -ms-transform: rotate(-405deg);
+      -moz-transform: rotate(-405deg);
+      -webkit-transform: rotate(-405deg);
+      -o-transform: rotate(-405deg);
+      transform: rotate(-405deg);
+    }
+  }
+
+@-webkit-keyframes rev-2{
+    from{
+        -webkit-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    to {
+        -webkit-tranform: rotate(-405deg);
+        -o-transform: rotate(-405deg);
+        transform: rotate(-405deg);
+    }
+}
+
+.rev-2 {
+    -webkit-animation: rev-2 20s linear infinite;
+    -moz-animation: rev-2 20s linear infinite;
+    -ms-animation: rev-2 20s linear infinite;
+    -o-animation: rev-2 20s linear infinite;
+    animation: rev-2 20s linear infinite;
+}
+
+@keyframes rev-3 {
+    from {
+      -ms-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+    }
+    to {
+      -ms-transform: rotate(-450deg);
+      -moz-transform: rotate(-450deg);
+      -webkit-transform: rotate(-450deg);
+      -o-transform: rotate(-450deg);
+      transform: rotate(-450deg);
+    }
+  }
+
+@-webkit-keyframes rev-3{
+    from{
+        -webkit-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+    to {
+        -webkit-tranform: rotate(-450deg);
+        -o-transform: rotate(-450deg);
+        transform: rotate(-450deg);
+    }
+}
+
+.rev-3 {
+    -webkit-animation: rev-3 20s linear infinite;
+    -moz-animation: rev-3 20s linear infinite;
+    -ms-animation: rev-3 20s linear infinite;
+    -o-animation: rev-3 20s linear infinite;
+    animation: rev-3 20s linear infinite;
+}
+
+@keyframes rev-4 {
+    from {
+      -ms-transform: rotate(-135deg);
+      -moz-transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+      -o-transform: rotate(-135deg);
+      transform: rotate(-135deg);
+    }
+    to {
+      -ms-transform: rotate(-495deg);
+      -moz-transform: rotate(-495deg);
+      -webkit-transform: rotate(-495deg);
+      -o-transform: rotate(-495deg);
+      transform: rotate(-495deg);
+    }
+  }
+
+@-webkit-keyframes rev-4{
+    from{
+        -webkit-transform: rotate(-135deg);
+        -o-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+    }
+    to {
+        -webkit-tranform: rotate(-495deg);
+        -o-transform: rotate(-495deg);
+        transform: rotate(-495deg);
+    }
+}
+
+.rev-4 {
+    -webkit-animation: rev-4 20s linear infinite;
+    -moz-animation: rev-4 20s linear infinite;
+    -ms-animation: rev-4 20s linear infinite;
+    -o-animation: rev-4 20s linear infinite;
+    animation: rev-4 20s linear infinite;
+}
+
+.self-image-port {
+    background: url(../../resources/studying.png);
+    background-position: center;
+    background-size: contain;
+    height: 362px;
+    width: 362px;
+}
+
+.my-skill-logos {
+    position: relative;
+    width: 75px;
+    height: 75px;
+}
+
+.react {
+    background: url(../../resources/React-logo.svg);
+    background-size: 75px 75px;
+}
+
+.js {
+    background: url(../../resources/JS-logo.svg);
+    background-size: 75px 75px;
+    background-clip: border-box;
+    border-radius: 50px;
+}
+
+.C {
+    background: url(../../resources/C-logo.svg);
+    background-size: 75px 75px;
+    background-clip: border-box;
+    border-radius: 50px;
+}
+
+.DB {
+    background: url(../../resources/Database-logo.svg);
+    background-size: 75px 75px;
+    background-clip: border-box;
+    border-radius: 50px;
+}
+
+.Git {
+    background: url(../../resources/Git-logo.svg);
+    background-size: 75px 75px;
+    background-clip: border-box;
+    border-radius: 50px;
+}
+
+.AWS {
+    background: url(../../resources/AWS-logo.svg);
+    background-size: 75px 75px;
+    background-clip: border-box;
+    border-radius: 50px;
+}
+
+.Java {
+    background: url(../../resources/java-logo.svg);
+    background-size: 75px 75px;
+    background-clip: border-box;
+    border-radius: 50px;
+}
+
+.GCP {
+    background: url(../../resources/GCP-logo.svg);
+    background-size: 75px 75px;
+    background-clip: border-box;
+    border-radius: 50px;
+}
+
+
+/*
+    will need to move media queries to the root.
+    then change only the top and right variables.
+    this will allow the images to be positioned withought changing each class
+    will need to figure out how to move these below the greeting at 1115px media query
+
+    POSSIBLE SOLUTION:
+        put a div below the greeting that has display: none until the images need to be moved
+        then make the height large enough to create space for the images
+        in the same media query as the display change. make the right and top variables position them correctly below
+        since math will keep everything properly positioned using those variables it should make
+*/
+
+.spacer {
+    display: none;
+}
+
+@media screen and (max-width: 1115px){
+    .spacer {
+        display:block;
+        height: 500px;
+    }
+
+    .rot-1, .rot-2, .rot-3, .rot-4, .img-container{
+        margin-left: auto;
+        margin-right: auto;
+        right: 0;
+        left: 0;
     }
 }
 
@@ -122,12 +547,11 @@
 }
 
 @media screen and (max-width: 400px) {
+    .img-container {
+        align-items: center;
+        justify-content: center;
+    }
     .self-image-port {
-        position: inherit;
-        top: 218PX;
-        right: calc(100vw / 3);
-        mask-image: url(../../resources/small_self_image_mask.svg);
-        background: url(../../resources/testsvg.svg);
         height: 241.74px;
         width: 250px;
         background-position: center;

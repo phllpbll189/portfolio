@@ -35,6 +35,26 @@ code {
 
 :root{
   overflow-x: hidden;
+  --top: 218PX;
+  --right: calc(100vw / 3);
+}
+
+@media screen and (max-width: 1500px) {
+  :root{
+    --right: calc(100vw/6)
+  }
+}
+
+@media screen and (max-width: 1115px) {
+  :root{
+    --top: 625px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  :root{
+    --top: 550px;
+  }
 }
 
 
