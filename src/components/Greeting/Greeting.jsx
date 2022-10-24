@@ -14,7 +14,41 @@ export const Greeting = () => {
                 <svg src='../../resources/github.svg' className='gitimage'></svg>
                 <svg src='../../resources/linkdin.svg' className='linkdimage'></svg>
             </div>
-            <svg src='../../resources/self_image_mask.svg' className='self-image-port'/>
+
+            <div className='spacer'/>
+            
+            <div className='img-container'>
+                <div className='self-image-port'/>
+            </div>
+
+            <div className='img-container rot-1'>
+                <div className='skill-container'>
+                        <svg className='my-skill-logos react rev-1' src="../../resources/React-logo.svg"/>
+                        <svg className='my-skill-logos js rev-1' src="../../resources/JS-logo.svg"/>
+                </div>
+            </div>
+
+            <div className='img-container rot-2'>
+                <div className='skill-container'>
+                    <svg className='my-skill-logos C  rev-2' src="../../resources/C-logo.svg"/>
+                    <svg className='my-skill-logos DB rev-2' src="../../resources/Database-logo.svg"/>
+                </div>
+            </div>
+            
+            <div className='img-container rot-3'>
+                <div className='skill-container'>
+                    <svg className='my-skill-logos Git rev-3' src="../../resources/React-logo.svg"/>
+                    <svg className='my-skill-logos AWS rev-3' src="../../resources/AWS-logo.svg"/>
+                </div>
+            </div>
+
+            <div className='img-container rot-4'>
+                <div className='skill-container'>
+                    <svg className='my-skill-logos Java rev-4' src="../../resources/java-logo.svg"/>
+                    <svg className='my-skill-logos GCP rev-4' src="../../resources/GCP-logo.svg"/>
+                </div>
+            </div>
+
         </div>
     )
 }
