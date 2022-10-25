@@ -9,11 +9,10 @@ export const Home = () => {
     return(
         <>
             <Circle/>
-            <div className="container-margins">
                 <Navbar/>
                 <Greeting/>
                 <Experience/>
-            </div>
+
         </>
     )
 }

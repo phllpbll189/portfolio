@@ -11,8 +11,12 @@ export const Greeting = () => {
             <span></span>
             <div className='connect'>connect with me:</div>
             <div className='github-image'>
-                <svg src='../../resources/github.svg' className='gitimage'></svg>
-                <svg src='../../resources/linkdin.svg' className='linkdimage'></svg>
+                <a href='https://github.com/phllpbll189'>
+                    <svg  src='../../resources/github.svg' className='gitimage'></svg>
+                </a>
+                <a href='https://www.linkedin.com/in/phillip-bell-221b27172/'>
+                    <svg src='../../resources/linkdin.svg' className='linkdimage'></svg>
+                </a>
             </div>
 
             <div className='spacer'/>
@@ -21,31 +25,31 @@ export const Greeting = () => {
                 <div className='self-image-port'/>
             </div>
 
-            <div className='img-container rot-1'>
+            <div className='img-container rot-1' style={{"--deg": 0}}>
                 <div className='skill-container'>
                         <svg className='my-skill-logos react rev-1' src="../../resources/React-logo.svg"/>
                         <svg className='my-skill-logos js rev-1' src="../../resources/JS-logo.svg"/>
                 </div>
             </div>
 
-            <div className='img-container rot-2'>
+            <div className='img-container rot-1' style={{"--deg": 1}}>
                 <div className='skill-container'>
-                    <svg className='my-skill-logos C  rev-2' src="../../resources/C-logo.svg"/>
-                    <svg className='my-skill-logos DB rev-2' src="../../resources/Database-logo.svg"/>
+                    <svg className='my-skill-logos C  rev-1' src="../../resources/C-logo.svg"/>
+                    <svg className='my-skill-logos DB rev-1' src="../../resources/Database-logo.svg"/>
                 </div>
             </div>
             
-            <div className='img-container rot-3'>
+            <div className='img-container rot-1' style={{"--deg": 2}}>
                 <div className='skill-container'>
-                    <svg className='my-skill-logos Git rev-3' src="../../resources/React-logo.svg"/>
-                    <svg className='my-skill-logos AWS rev-3' src="../../resources/AWS-logo.svg"/>
+                    <svg className='my-skill-logos Git rev-1' src="../../resources/React-logo.svg"/>
+                    <svg className='my-skill-logos AWS rev-1' src="../../resources/AWS-logo.svg"/>
                 </div>
             </div>
 
-            <div className='img-container rot-4'>
+            <div className='img-container rot-1' style={{"--deg": 3}}>
                 <div className='skill-container'>
-                    <svg className='my-skill-logos Java rev-4' src="../../resources/java-logo.svg"/>
-                    <svg className='my-skill-logos GCP rev-4' src="../../resources/GCP-logo.svg"/>
+                    <svg className='my-skill-logos Java rev-1' src="../../resources/java-logo.svg"/>
+                    <svg className='my-skill-logos GCP rev-1' src="../../resources/GCP-logo.svg"/>
                 </div>
             </div>
 
