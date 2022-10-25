@@ -55,6 +55,11 @@
     margin-left: auto;
 }
 
+.job-description > ul> li{
+    font-weight: 100;
+    font-size: 14px;
+}
+
 @media screen and (max-width: 750px) {
     .job-container{
         display: flex;
@@ -85,6 +90,15 @@
     #experience-header{
         text-align: center;
     }
+
+    .job-description {
+        width: 100%;
+    }
+
+    .job-description > ul> li{
+        font-weight: 100;
+        font-size: 13px;
+    }
     
     .job-container{
         display: flex;
@@ -96,11 +110,14 @@
 
     .job-name {
         font-size: 18px; 
+        text-align: center;
     }
     
     .job-title {
+        text-align: center;
         font-weight: 100;
         font-size: 13px;
+        font-style: italic;
     }
 
     .job-dates{
