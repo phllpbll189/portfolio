@@ -2,7 +2,7 @@ import { Template } from "./Template"
 
 export const Experience = () => {
 
-    const leahyDuty = [
+    const inspaceDuty = [
         "created front end interfaces in ReactJS",
         "Created documentation of processes and deliverables with Confluence",
         "Updated and created new tasks on Jira",
@@ -10,7 +10,7 @@ export const Experience = () => {
         "Wrote integration tests in Jest"
     ]
 
-    const inspaceDuty = [
+    const leahyDuty = [
         "Collaborated with Secret Service to create full-stack web app",
         "created front end interfaces in ReactJS",
         "Created third normal form database designs and wrote SQL queries",
