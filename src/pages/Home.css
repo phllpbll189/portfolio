@@ -1,11 +1,6 @@
 .container-margins {
     position: relative;
     overflow: hidden;
-    display: flex;
-    padding-left: 16.5%;
-    padding-right: 16.5%;
-    padding-top: 15px;
 
-    gap: 100px;
-    flex-direction: column;
+    height: 100vh;
 }

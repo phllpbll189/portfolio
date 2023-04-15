@@ -4,12 +4,12 @@ export const Greeting = () => {
     
     return(
         <div className="greeting-section">
-            <div className="start">Hello, I am</div>
-            <div className="name">Phillip</div>
-            <div className="name">Bell</div>
-            <div className="introduction">A Fullstack Engineer with a passion for web design.</div>
+            <p className="start">Hello, I am</p>
+            <p className="name">Phillip</p>
+            <p className="name">Bell</p>
+            <p className="introduction">A Fullstack Engineer with a passion for web design.</p>
             <span></span>
-            <div className='connect'>connect with me:</div>
+            <p className='connect'>connect with me:</p>
             <div className='github-image'>
                 <a href='https://github.com/phllpbll189'>
                     <svg  src='../../resources/github.svg' className='gitimage'></svg>

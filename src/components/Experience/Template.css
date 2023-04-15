@@ -1,8 +1,29 @@
 .job-container{
     display: flex;
-    gap: 90px;
+    justify-content: space-between;
     flex-direction: row;
-    width: 100%;
+    width: auto;
+    margin-left: 16.5%;
+    margin-right: 16.5%;
+
+}
+
+.parallax-back{
+    background: url(../../resources/pexels-creative-vix-9754.jpg);
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(50%);
+    position: relative;
+}
+
+#experience-header{
+    font-size:xx-large;
+    position: relative;
+    top: -275px;
+    left: 50%;
 }
 
 .experience-container {
@@ -52,7 +73,7 @@
 }
 
 .job-dates {
-    margin-left: auto;
+    justify-self: flex-end;
 }
 
 .job-description > ul> li{
