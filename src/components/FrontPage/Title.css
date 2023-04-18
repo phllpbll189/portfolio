@@ -1,21 +1,57 @@
 .Front-Page{
-    color: white;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    left: 20%;
-    top: 20%
+    display: flex;
+
+    height: var(--height);
+
+    background-image: url(../../resources/phillip-cut.png);
+    background-repeat: no-repeat;
+    background-position: 70% 10%;  
+    background-size:850px;
 }
 
-.Front-Page>h1{
+.Front-Page-content {
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15%;
+    width: 500px;
+}
+
+
+@media screen and (min-width: 776px){
+    .Front-Page {
+        justify-content: flex-start;
+    }
+
+    .Front-Page-content{
+        display: inline-flex;
+        margin-left: 20%;
+    }
+
+    
+}
+
+@media screen and (max-width: 775px) {
+    .Front-Page {
+        justify-content: center;
+    }
+
+    .Front-Page-content{
+        display: flex;
+    }
+}
+
+
+
+
+.Front-Page-content>h2{
     font-weight: 400;
     font-size: 1.7em;
     letter-spacing: 1px;
     text-align: center;
 }
 
-.Front-Page>p {
+.Front-Page-content>p {
     font-size: 1.125em;
     text-align: center; 
 }

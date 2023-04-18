@@ -12,10 +12,7 @@ body {
   box-sizing: border-box;
   margin: 0;
 
-  background-image: url(resources/happy-phillip-pose.jpg);
-  background-repeat: no-repeat;
-  background-position: 0% 15%;  
-  background-size: 120%;
+  background-color: #010510;
 }
 
 body::-webkit-scrollbar {
@@ -58,9 +55,10 @@ button:hover{
   border: 1px solid grey;
 }
 
+@media screen and (max-width: 2000px) {
+  :root{
+    --height: 700px;
+  }
+}
+
 /* need to change h4 to suit the experience titles*/
-
-
-
-
-
