@@ -9,10 +9,9 @@ export const Home = () => {
     return(
         <>
             <Circle/>
-                <Navbar/>
-                <Greeting/>
-                <Experience/>
-
+            <Navbar/>
+            <Greeting/>
+            <Experience/>
         </>
     )
 }
