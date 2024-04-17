@@ -1,16 +1,17 @@
 import './Filter.css'
 
 export const Filter = ({ selection, setSelection}) => {
-    let select = (num) => {
-        if(num in selection){
-            setSelection()
-        }
+    let select = (lang) => {
+        setSelection({...selection, [lang]: !selection[lang]})
     }
+
     return(
         <>
-            <button>Javascript</button>
-            <button>C++</button>
-            <button>Java</button>
+            <div>
+                <button onClick={() => select("Javascript")}>Javascript</button>
+                <button onClick={() => select("C++")}>C++</button>
+                <button onClick={() => select("Java")}>Java</button> 
+            </div>
         </>
     )
 }

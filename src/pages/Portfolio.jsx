@@ -4,9 +4,12 @@ import './Portfolio.css'
 import { Filter } from '../components/Filter/Filter'
 export const Portfolio = () =>{
     let [filter, setFilter] = useState({
-        "javascript": false, 
+        "Javascript": false, 
         "C++": true,
-})
+        "Java": false
+    })
+
+
 
     let settings = Object.keys(filter).map((lang) => {
         if(filter[lang]){
