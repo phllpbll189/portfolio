@@ -1,0 +1,13 @@
+.filter{
+    background: linear-gradient(3deg, rgba(173, 216, 230, 0.719), #add8e67a);
+    border: blue;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    height: auto;
+}
+
+.filter>p{
+    margin: 0px;
+}
+
