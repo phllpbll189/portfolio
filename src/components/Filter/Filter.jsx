@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useTransition } from 'react'
 import './Filter.css'
 
 export const Filter = ({ selection, setSelection}) => {
@@ -6,6 +6,11 @@ export const Filter = ({ selection, setSelection}) => {
 
     let select = (lang) => {
         setSelection({...selection, [lang]: !selection[lang]})
+    }
+
+    let changeVis = () => {
+        console.log(filterVisible)
+        setVisibility(!filterVisible)
     }
 
 
@@ -16,8 +21,8 @@ export const Filter = ({ selection, setSelection}) => {
     return(
         <>
             <div className='filter'>
-                <p onClick={() => setVisibility(!filterVisible)}>Filter</p>
-                <div>
+                <p onClick={changeVis}>Filter</p>
+                <div className={filterVisible ? 'opt' : 'opt show'}>
                     <button onClick={() => select("Javascript")}>Javascript</button>
                     <button onClick={() => select("C++")}>C++</button>
                     <button onClick={() => select("Java")}>Java</button> 

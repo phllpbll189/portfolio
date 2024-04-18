@@ -1,10 +1,44 @@
 .filter{
-    background: linear-gradient(3deg, rgba(173, 216, 230, 0.719), #add8e67a);
+    background: linear-gradient(0deg, rgb(67 83 173 / 53%), #5c2be25c);
     border: blue;
     border-radius: 10px;
     text-align: center;
     padding: 15px;
     height: auto;
+}
+
+.opt{
+    transition: all 1s;
+    overflow: hidden;
+    height: 0px;
+
+    display: flex;
+    align-items: center;
+}
+
+.opt > button{
+   transition: all .25s;
+   opacity: 0;
+   height: 40px;
+   margin-right: 10px;
+
+   font-family: inherit;
+   font-weight: bold;
+   color: white;
+   font-size: medium;
+
+   border-radius: 10px;
+   border-color: rgb(70, 23, 114);
+   border-style: solid;
+   background-color: blueviolet;
+}
+
+.opt.show > button{
+    opacity: 100;
+}
+
+.opt.show{
+    height: 100px;
 }
 
 .filter>p{
