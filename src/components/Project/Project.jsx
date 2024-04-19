@@ -1,8 +1,14 @@
-import 'Project.css'
+import { buildQueries } from '@testing-library/react'
+import './Project.css'
+export const Project = ({BackImg, Title}) => {
 
-export const Project = () => {
-    return (
-        <>
-        </>
+    let style = {
+        backgroundImage: 'url(' + require(`../../resources/${BackImg}`) + ')'
+    }
+    
+    return (   
+        <div className='proj_container' style={style}>
+           <div className='title' >{Title}</div> 
+        </div>
     )
 }

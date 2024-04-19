@@ -1,0 +1,24 @@
+.proj_container {
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 350px;
+    width: 350px;
+
+    border-color: black;
+    border-radius: 10px;
+}
+
+.proj_container > .title {
+    background: rgba(0, 0, 0, 0.541);
+    padding: 15px;
+    text-align: center;
+
+}
+
+.proj_container > .main {
+ 
+}
+
+.proj_container > .pic {
+    height: 100px;
+}

@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { Navbar } from '../components/Navbar/Navbar'
 import './Portfolio.css'
 import { Filter } from '../components/Filter/Filter'
+import { Project } from '../components/Project/Project'
+
 export const Portfolio = () =>{
     let [filter, setFilter] = useState({
         "Javascript": false, 
@@ -9,14 +11,8 @@ export const Portfolio = () =>{
         "Java": false
     })
 
-
-
     let settings = Object.keys(filter).map((lang) => {
-        if(filter[lang]){
-            return (
-                <p>{lang}</p>
-            )
-        }
+        
     })
 
     return(
@@ -24,9 +20,7 @@ export const Portfolio = () =>{
             <Navbar/>
             <div className='proj_greet'>Projects</div>
             <Filter selection={filter} setSelection={setFilter}/>
-            {settings}
-            <div className='proj_container'/>
+            <Project BackImg={"TestProject.jpg"} Title={"Test"}/>
         </>
     )
 }
-

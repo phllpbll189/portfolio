@@ -1,4 +1,4 @@
-import { useState, useTransition } from 'react'
+import { useState } from 'react'
 import './Filter.css'
 
 export const Filter = ({ selection, setSelection}) => {
@@ -13,11 +13,6 @@ export const Filter = ({ selection, setSelection}) => {
         setVisibility(!filterVisible)
     }
 
-
-    //need to learn how to do react transitions to get desired effect
-    //if I want to animate the filter
-
-    //this is because everytime it changes it completely reloads the root.
     return(
         <>
             <div className='filter'>
