@@ -4,9 +4,12 @@ import './index.css';
 import { Home } from './pages/Home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Portfolio } from './pages/Portfolio';
+import { Provider } from 'react-redux';
+import store from './store'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <Provider store={store}>
   <React.StrictMode>
     <div className="container-margins">
       <BrowserRouter>
@@ -17,5 +20,6 @@ root.render(
       </BrowserRouter>
     </div>
   </React.StrictMode>
+  </Provider>
 );
 
