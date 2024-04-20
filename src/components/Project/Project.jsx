@@ -1,7 +1,19 @@
 import { buildQueries } from '@testing-library/react'
 import './Project.css'
-export const Project = ({BackImg, Title}) => {
+import { useSelector, useDispatch } from 'react-redux'
+import { openWidget, closeWidget } from '../../widgetSlice'
 
+
+
+export const Project = ({BackImg, Title}) => {
+    const dispatch = useDispatch();
+    const addTodo = text => {
+        return {
+          type: 'widget/openWidget',
+          payload: text
+        }
+    }
+      
     let style = {
         backgroundImage: 'url(' + require(`../../resources/${BackImg}`) + ')'
     }

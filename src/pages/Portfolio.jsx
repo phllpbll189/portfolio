@@ -3,8 +3,12 @@ import { Navbar } from '../components/Navbar/Navbar'
 import './Portfolio.css'
 import { Filter } from '../components/Filter/Filter'
 import { Project } from '../components/Project/Project'
+import { useSelector } from 'react-redux'
 
 export const Portfolio = () =>{
+    const currentWidget = useSelector(state => state.widget.widget)
+
+
     let [filter, setFilter] = useState({
         "Javascript": false, 
         "C++": true,
@@ -21,6 +25,7 @@ export const Portfolio = () =>{
             <div className='proj_greet'>Projects</div>
             <Filter selection={filter} setSelection={setFilter}/>
             <Project BackImg={"TestProject.jpg"} Title={"Test"}/>
+            <div>{currentWidget}</div>
         </>
     )
 }

@@ -10,7 +10,7 @@ export const widgetSlice = createSlice({
             state.widget = null
         },
         openWidget: (state, action) => {
-            state.widget = action.key
+            state.widget = action.payload
         },
     },
 })
