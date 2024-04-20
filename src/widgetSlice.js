@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 export const widgetSlice = createSlice({
     name: "widget",
     initialState:{
-        widget: null
+        widget: "s"
     },
     reducers:{
         closeWidget: (state) => {

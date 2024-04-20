@@ -6,8 +6,8 @@ import { Project } from '../components/Project/Project'
 import { useSelector } from 'react-redux'
 
 export const Portfolio = () =>{
-    const currentWidget = useSelector(state => state.widget.widget)
-
+    const currentWidget = useSelector(state => state.widgetReducer.widget)
+    console.log(currentWidget)
 
     let [filter, setFilter] = useState({
         "Javascript": false, 
