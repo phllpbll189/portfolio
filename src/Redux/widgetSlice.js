@@ -4,11 +4,11 @@ import { createSlice } from "@reduxjs/toolkit";
 export const widgetSlice = createSlice({
     name: "widget",
     initialState:{
-        widget: "s"
+        widget: ""
     },
     reducers:{
         closeWidget: (state) => {
-            state.widget = null
+            state.widget = ""
         },
         openWidget: (state, action) => {
             console.log("in widget slice openwidget" + JSON.stringify(action))

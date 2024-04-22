@@ -1,12 +1,11 @@
 import './Project.css'
 import { useSelector, useDispatch } from 'react-redux'
 import { openWidget, closeWidget } from '../../Redux/widgetSlice'
-import data from '../../portfolio_data.json'
 
-export const Project = ({name}) => {    
+export const Project = ({name, data}) => {    
     const dispatch = useDispatch();
-    const widgetData = JSON.parse(JSON.stringify(data))[name]
-    console.log(widgetData)
+    const widgetData =  data[name]
+   
     let style = {
         backgroundImage: 'url(' + require(`../../resources/${widgetData.img}`) + ')'
     }   
