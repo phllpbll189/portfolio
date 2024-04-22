@@ -1,26 +1,23 @@
-import { buildQueries } from '@testing-library/react'
 import './Project.css'
 import { useSelector, useDispatch } from 'react-redux'
-import { openWidget, closeWidget } from '../../widgetSlice'
+import { openWidget, closeWidget } from '../../Redux/widgetSlice'
+import data from '../../portfolio_data.json'
 
-
-
-export const Project = ({BackImg, Title}) => {
+export const Project = ({name}) => {    
     const dispatch = useDispatch();
-    const addTodo = text => {
-        return {
-          type: 'widget/openWidget',
-          payload: text
-        }
-    }
-      
+    const widgetData = JSON.parse(JSON.stringify(data))[name]
+    console.log(widgetData)
     let style = {
-        backgroundImage: 'url(' + require(`../../resources/${BackImg}`) + ')'
+        backgroundImage: 'url(' + require(`../../resources/${widgetData.img}`) + ')'
+    }   
+
+    let handleClick = () => {
+        dispatch(openWidget(name))
     }
     
     return (   
-        <div className='proj_container' style={style}>
-           <div className='title' >{Title}</div> 
+        <div className='proj_container' onClick={handleClick} style={style}>
+           <div className='title' >{name}</div> 
         </div>
     )
 }

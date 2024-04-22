@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
-import widgetReducer from "./widgetSlice";
+import widgetSlice from "./widgetSlice";
 
 export default configureStore({
-    reducer: {widgetReducer},
+    reducer: {widgetSlice},
 })

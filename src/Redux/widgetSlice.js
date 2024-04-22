@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+
 export const widgetSlice = createSlice({
     name: "widget",
     initialState:{
@@ -10,6 +11,7 @@ export const widgetSlice = createSlice({
             state.widget = null
         },
         openWidget: (state, action) => {
+            console.log("in widget slice openwidget" + JSON.stringify(action))
             state.widget = action.payload
         },
     },
