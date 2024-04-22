@@ -17,10 +17,8 @@ export const Widget = () => {
     return (
         <div onClick={stopClick} className='screen-cover'>
             <div className='widget'>
-                <div onClick={exit} className='exit-widget'>
-
-                </div>
-                {currentWidget}
+                <div onClick={exit} className='exit-widget'/>
+                <div className='title'>{currentWidget}</div>
             </div>
         </div>
 

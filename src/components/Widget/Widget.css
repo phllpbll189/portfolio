@@ -1,15 +1,17 @@
-.widget{
+.widget {
+    overflow: hidden;
     position: absolute;
+
     height: 75vh;
     width: 75vh;
-    background-color: rgba(14, 118, 209, 0.904);
-    overflow: hidden;
-    
-    border-radius: 10px;
     top: calc(50vh - (75vh/2));
     right: calc(50vw - (75vh/2));
-}
 
+    background: linear-gradient(0deg, rgb(67 83 173 / 80%), #5c2be2);
+    border-radius: 10px;
+    border: #2f1675;
+    border-style: solid;
+}
 .screen-cover {
     position: fixed;
     height: 100vh;
@@ -26,4 +28,11 @@
     
     position:relative;
     float: inline-end;
+}
+
+.title {
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+    background-color: #0000007a;
+
 }
