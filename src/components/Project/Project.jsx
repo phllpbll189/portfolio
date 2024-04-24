@@ -6,8 +6,11 @@ export const Project = ({name, data}) => {
     const dispatch = useDispatch();
     const widgetData =  data[name]
    
+    console.log(data)
     let style = {
-        backgroundImage: 'url(' + require(`../../resources/${widgetData.img}`) + ')'
+        backgroundImage: 'url(' + require(`../../resources/${widgetData.img}`) + ')',
+        backgroundPosition: widgetData["bgPosition"],
+        backgroundSize: "contain"
     }   
 
     let handleClick = () => {

@@ -12,6 +12,7 @@
     border: #2f1675;
     border-style: solid;
 }
+
 .screen-cover {
     position: fixed;
     height: 100vh;
@@ -34,5 +35,21 @@
     text-align: center;
     padding: 10px 0px 0px 0px;
     background-color: #0000007a;
+
+}
+
+@media screen and (max-width: 1115px){
+    .proj_greet {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .proj_greet{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px){
 
 }

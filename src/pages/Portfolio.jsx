@@ -42,7 +42,12 @@ export const Portfolio = () =>{
             <Navbar/>
             <div className='proj_greet'>Projects</div>
             <Filter selection={filter} setSelection={setFilter}/>
-            <Project name='3d Graphics Sphere' data={data} onClick={() => {handleClick("3dGraphic")}}/>
+            <div className='grid-container'>
+                <Project name='3d Graphics Sphere' data={data} onClick={() => {handleClick("3dGraphic")}}/>
+                <Project name='3d Graphics Sphere' data={data} onClick={() => {handleClick("3dGraphic")}}/>
+                <Project name='3d Graphics Sphere' data={data} onClick={() => {handleClick("3dGraphic")}}/>
+                <Project name='3d Graphics Sphere' data={data} onClick={() => {handleClick("3dGraphic")}}/>
+            </div>
             {WidgetGen(currentWidget)}
         </>
     )

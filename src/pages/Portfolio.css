@@ -4,17 +4,22 @@
 }
 
 
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
 .proj_greet {
     font-weight: 700;
     font-size: 100px;
     line-height: 30px;
-}
+}   
 
-@media screen and (max-width: 1115){
+@media screen and (max-width: 1115px){
     .proj_greet {
         text-align: center;
-        align-items: center;
     }
 }
 

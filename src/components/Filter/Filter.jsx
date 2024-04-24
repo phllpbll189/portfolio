@@ -17,7 +17,7 @@ export const Filter = ({ selection, setSelection}) => {
         <>
             <div className='filter'>
                 <p onClick={changeVis}>Filter</p>
-                <div className={filterVisible ? 'opt' : 'opt show'}>
+                <div className={filterVisible ? 'opt show' : 'opt'}>
                     <button onClick={() => select("Javascript")}>Javascript</button>
                     <button onClick={() => select("C++")}>C++</button>
                     <button onClick={() => select("Java")}>Java</button> 

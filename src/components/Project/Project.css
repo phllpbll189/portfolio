@@ -6,6 +6,7 @@
 
     border-color: black;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 .proj_container > .title {
@@ -21,4 +22,18 @@
 
 .proj_container > .pic {
     height: 100px;
+}
+
+@media screen and (max-width: 1115){
+}
+
+@media screen and (max-width: 750px){
+
+}
+
+@media screen and (max-width: 500px){
+    .proj_container{
+        height: 250px;
+        width: 250px;
+    }
 }

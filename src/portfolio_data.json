@@ -1,6 +1,7 @@
 {
     "3d Graphics Sphere": {
         "Description": "This is a test",
-        "img": "TestProject.jpg"
+        "img": "normalSphere.png",
+        "bgPosition": "center"
     }
 }
