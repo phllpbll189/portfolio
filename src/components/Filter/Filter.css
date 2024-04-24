@@ -5,6 +5,11 @@
     text-align: center;
     padding: 15px;
     height: auto;
+    width: 100%;
+}
+
+.filter-wrapper {
+    align-items: center;
 }
 
 .opt{
@@ -45,3 +50,8 @@
     margin: 0px;
 }
 
+@media screen and (max-width:1050px){
+    .filter {
+        width: 500px;
+    }
+}

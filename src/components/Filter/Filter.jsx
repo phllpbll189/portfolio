@@ -14,7 +14,7 @@ export const Filter = ({ selection, setSelection}) => {
     }
 
     return(
-        <>
+        <div className='filter-wrapper'>
             <div className='filter'>
                 <p onClick={changeVis}>Filter</p>
                 <div className={filterVisible ? 'opt show' : 'opt'}>
@@ -23,6 +23,6 @@ export const Filter = ({ selection, setSelection}) => {
                     <button onClick={() => select("Java")}>Java</button> 
                 </div>
             </div>
-        </>
+        </div>
     )
 }
