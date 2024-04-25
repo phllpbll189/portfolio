@@ -1,6 +1,7 @@
 import './Widget.css'
 import { useSelector, useDispatch } from 'react-redux'
 import { closeWidget } from '../../Redux/widgetSlice'
+import { ReactComponent as X} from '../../resources/x.svg'
 
 export const Widget = () => {
     const currentWidget = useSelector(state => state.widgetSlice.widget)
@@ -17,8 +18,12 @@ export const Widget = () => {
     return (
         <div onClick={stopClick} className='screen-cover'>
             <div className='widget'>
-                <div onClick={exit} className='exit-widget'/>
-                <div className='title'>{currentWidget}</div>
+                <div className='widget-navbar'>
+                    <div onClick={exit} className='exit-widget'>
+                        <X className='exit-button'/>
+                    </div>
+                    <div className='title'>{currentWidget}</div>
+                </div>
             </div>
         </div>
 

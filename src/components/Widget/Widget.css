@@ -23,19 +23,28 @@
 }
 
 .exit-widget {
-    width: 50px;
-    height: 50px;
-    background-color: green;
-    
-    position:relative;
+    margin-top: 2px;
+    display: flex;
+    height: 100%;
+    position: relative;
     float: inline-end;
+    justify-content: center;
+    align-content: center;
+}
+
+.exit-button {
+    fill: whitesmoke;
+    height: 30px;
+    width: 30px;
+}
+
+.widget-navbar {
+    background-color: #0000007a;
 }
 
 .title {
     text-align: center;
-    padding: 10px 0px 0px 0px;
-    background-color: #0000007a;
-
+    padding: 10px 0px 10px 0px;
 }
 
 @media screen and (max-width: 1115px){
