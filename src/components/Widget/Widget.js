@@ -38,7 +38,7 @@ export const Widget = () => {
                     <div className='title'>{currentWidget}</div>
                 </div>
                 
-                <img style={style} className='subject-image'/>
+                <img alt={data[currentWidget].alt} style={style} className='subject-image'/>
                 <div className='content-container' dangerouslySetInnerHTML={{__html: desc}}></div>
             </div>
         </div>

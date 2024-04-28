@@ -5,7 +5,8 @@ let data = {
            <p>This was done in a website called shadertoy</p>
            <p>You can see some of my work <a href="https://www.shadertoy.com/results?query=phllpbll189">here</a>`,
         "img": "normalSphere.png",
-        "bgPosition": "center"
+        "bgPosition": "center",
+        "alt": "a sphere with normal maps"
     } 
 }
 
