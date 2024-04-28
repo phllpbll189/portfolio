@@ -1,0 +1,35 @@
+.container-margins {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.proj_greet {
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 30px;
+}   
+
+@media screen and (max-width: 1115px){
+    .proj_greet {
+        text-align: center;
+        font-size: 70px
+    }
+}
+
+@media screen and (max-width: 750px){
+    .proj_greet{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+}

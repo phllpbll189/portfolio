@@ -1,0 +1,36 @@
+.proj_container {
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 350px;
+    width: 350px;
+
+    border-color: black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.proj_container > .title {
+    background: rgba(0, 0, 0, 0.541);
+    padding: 15px;
+    text-align: center;
+
+}
+
+.proj_container > .pic {
+    height: 100px;
+}
+
+@media screen and (max-width: 1115px){
+    
+}
+
+@media screen and (max-width: 750px){
+
+}
+
+@media screen and (max-width: 500px){
+    .proj_container{
+        height: 250px;
+        width: 250px;
+    }
+}
