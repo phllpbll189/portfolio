@@ -2,6 +2,10 @@ import './Widget.css'
 import { useSelector, useDispatch } from 'react-redux'
 import { closeWidget } from '../../Redux/widgetSlice'
 import { ReactComponent as X} from '../../resources/x.svg'
+import data from '../../portFolioData'
+
+
+
 
 export const Widget = () => {
     const currentWidget = useSelector(state => state.widgetSlice.widget)
@@ -15,6 +19,14 @@ export const Widget = () => {
         dispatch(closeWidget())
     }
 
+    let style = {
+        backgroundImage: 'url(' + require(`../../resources/${data[currentWidget].img}`) + ')',
+        backgroundPosition: data[currentWidget]["bgPosition"],
+        backgroundSize: "contain"
+    }
+
+    let desc = data[currentWidget]["Description"]
+
     return (
         <div onClick={stopClick} className='screen-cover'>
             <div className='widget'>
@@ -22,8 +34,12 @@ export const Widget = () => {
                     <div onClick={exit} className='exit-widget'>
                         <X className='exit-button'/>
                     </div>
+                
                     <div className='title'>{currentWidget}</div>
                 </div>
+                
+                <img style={style} className='subject-image'/>
+                <div className='content-container' dangerouslySetInnerHTML={{__html: desc}}></div>
             </div>
         </div>
 

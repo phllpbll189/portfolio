@@ -22,6 +22,14 @@
     background-color: rgba(34, 34, 34, 0.671);
 }
 
+/*
+    STYLES FOR INSIDE THE WIDGET
+*/
+
+.widget-navbar {
+    background-color: #0000007a;
+}
+
 .exit-widget {
     margin-top: 2px;
     display: flex;
@@ -38,13 +46,20 @@
     width: 30px;
 }
 
-.widget-navbar {
-    background-color: #0000007a;
-}
-
 .title {
     text-align: center;
     padding: 10px 0px 10px 0px;
+}
+
+.subject-image {
+    float: inline-end;
+    height: 320px;
+    width: 320px;
+}
+
+.content-container>p:first-of-type {
+   margin-top: 0;
+   padding-top: 15px; 
 }
 
 @media screen and (max-width: 1115px){
