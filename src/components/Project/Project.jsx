@@ -1,6 +1,6 @@
 import './Project.css'
-import { useSelector, useDispatch } from 'react-redux'
-import { openWidget, closeWidget } from '../../Redux/widgetSlice'
+import {useDispatch } from 'react-redux'
+import { openWidget } from '../../Redux/widgetSlice'
 
 export const Project = ({name, data}) => {    
     const dispatch = useDispatch();
