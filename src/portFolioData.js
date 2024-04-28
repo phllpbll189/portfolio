@@ -1,4 +1,4 @@
-export default {
+let data = {
     "3d Graphics": {
         "Description": 
            `<p>I have done some 3d graphics programming!</p>
@@ -8,3 +8,5 @@ export default {
         "bgPosition": "center"
     } 
 }
+
+export default data
