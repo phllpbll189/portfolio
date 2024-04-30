@@ -19,7 +19,7 @@ export const Widget = () => {
         dispatch(closeWidget())
     }
 
-    let style = {
+    let widgetStyle = {
         backgroundImage: 'url(' + require(`../../resources/${data[currentWidget].img}`) + ')',
         backgroundPosition: data[currentWidget]["bgPosition"],
         backgroundSize: "contain"
@@ -38,7 +38,7 @@ export const Widget = () => {
                     <div className='title'>{currentWidget}</div>
                 </div>
                 
-                <img alt={data[currentWidget].alt} style={style} className='subject-image'/>
+                <img alt={data[currentWidget].alt} style={widgetStyle} className='subject-image'/>
                 <div className='content-container' dangerouslySetInnerHTML={{__html: desc}}></div>
             </div>
         </div>

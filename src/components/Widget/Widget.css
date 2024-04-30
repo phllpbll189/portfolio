@@ -2,10 +2,11 @@
     overflow: hidden;
     position: absolute;
 
-    height: 75vh;
-    width: 75vh;
+    --widgetwidth: 75vw;
+
+    width: var(--widgetwidth);
     top: calc(50vh - (75vh/2));
-    right: calc(50vw - (75vh/2));
+    right: calc(50vw - (var(--widgetwidth)/2));
 
     background: linear-gradient(0deg, rgb(67 83 173 / 80%), #5c2be2);
     border-radius: 10px;
@@ -62,6 +63,10 @@
    padding-top: 15px; 
 }
 
+.widget-link {
+    color: rgb(2, 197, 2);
+}
+
 @media screen and (max-width: 1115px){
     .proj_greet {
         text-align: center;
@@ -72,6 +77,10 @@
     .proj_greet{
         text-align: center;
     }
+    .subject-image{
+        height: 240px;
+        width: 240px;
+    } 
 }
 
 @media screen and (max-width: 500px){
